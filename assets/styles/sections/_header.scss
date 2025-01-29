@@ -1,0 +1,126 @@
+header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .container{
+        max-width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        h1{
+            text-transform: uppercase;
+            font-size: 4.5rem;
+            letter-spacing: 10px;
+            color: $white;
+        }
+        p{
+            font-style: italic;
+            color: $white;
+        }
+        a {
+            color: $white;
+            font-size: 1.1rem;
+        }
+        > a{ 
+            i{
+               border: 2px solid $white;
+               padding: 20px;
+               border-radius: 100%;
+               transform: translateY(0px);
+               transition: transform 0.5s ease-in-out;
+
+               &:hover{
+                color: $black;
+                border: 2px solid $black;
+                transform: translateY(30px);
+            
+               }
+           }
+        }
+        nav {
+            height: 80px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.250);
+            
+            
+            display: flex;
+            width: 85%;
+            justify-content: space-between;
+
+            .navbar-left {
+                display: flex;
+                align-items: center;
+                ul {
+                    color: $white;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    
+                    
+
+                    &:hover >:first-child{
+                        background: transparent;
+                        color: $white;
+                    }
+
+
+                    li {
+                        padding: 0 15px;
+                        letter-spacing: 2px;
+                        font-size: 0.8rem;
+                        font-weight: bold;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transition: 0.2s;
+
+                        &:first-child{
+                            background: $white;
+                            color: $black;
+                            &:hover{
+                                background: $white;
+                                color: $black;
+                            }
+                        }
+                        &:hover{
+                            background: $white;
+                            color: $black;
+                        }
+
+                    }
+    
+                }
+                
+            }
+            .navbar-right{
+                width: 30%;
+                display: flex;
+                align-items: center;
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+
+                    a {
+                        transition: 0.3s;
+                        &:hover{
+                            color: $black;        
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
