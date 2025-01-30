@@ -13,22 +13,21 @@ main{
             &::after{
                 content: "";
                 position: absolute;
-                height: 1px;             
                 background: rgba(0, 0, 0, 0.1);
+                height: 1px;
                 bottom: 0;       
                 width: 100%;
             }
+            
 
             p{
                 font-style: italic;
             }
         }
         .news{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 80%;
+            display: grid;
+            grid-template-rows: auto auto auto 1fr auto;
+            width: 85%;
             margin: 0 auto;
             text-align: center;
             gap: 40px;
@@ -67,6 +66,7 @@ main{
             }
             p{
                 font-size: 0.9rem;
+               
             }
             h5{
                 font-family: Merryweather, sans-serif;
@@ -74,9 +74,10 @@ main{
             }
             h4{
                 text-transform: uppercase;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 letter-spacing: 2px;
                 line-height: 30px;
+                // align-self: center;            
             }
 
             .img-container{
@@ -101,7 +102,6 @@ main{
                 left: 50%;
                 content: "";
                 height: 100%;
-                
                 border: 1px solid rgba(0, 0, 0, 0.1);
             }
         }

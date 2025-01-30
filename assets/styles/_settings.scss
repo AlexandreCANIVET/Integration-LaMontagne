@@ -58,7 +58,8 @@ body {
     padding: 10px 25px;
     font-weight: bold;
     transition: 0.3s;
-
+    width: 180px;
+    margin: 0 auto;
     &:hover{
         background: $black;
         color: $white;
