@@ -39,7 +39,8 @@ html{
 body {
     background: url(../images/bg.jpg) fixed center/cover;
     font-family: Inter, sans-serif;
-    
+    max-width: 1400px;
+    margin: 0 auto;
     
 }
 
@@ -63,5 +64,10 @@ body {
     &:hover{
         background: $black;
         color: $white;
+    }
+    @media screen and (max-width: 650px){
+        width: 80%;
+        min-width: 160px;
+        max-width: 260px;
     }
 }

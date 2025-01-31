@@ -11,15 +11,25 @@ header{
         display: flex;
         flex-direction: column;
         gap: 30px;
+        @media screen and (max-width: 650px){
+            max-width: 95%;
+        }
         h1{
             text-transform: uppercase;
             font-size: 4.5rem;
             letter-spacing: 10px;
             color: $white;
+            @media screen and (max-width: 650px){
+                font-size: 2.3rem;
+                letter-spacing: 7px;
+            }
         }
         p{
             font-style: italic;
             color: $white;
+            @media screen and (max-width: 650px){
+                line-height: 20px;
+            }
         }
         a {
             color: $white;
@@ -27,7 +37,7 @@ header{
         }
         > a{ 
             i{
-               border: 2px solid $white;
+               border: 3px solid $white;
                padding: 20px;
                border-radius: 100%;
                transform: translateY(0px);
@@ -35,7 +45,7 @@ header{
 
                &:hover{
                 color: $black;
-                border: 2px solid $black;
+                border: 3px solid $black;
                 transform: translateY(30px);
             
                }
@@ -53,10 +63,17 @@ header{
             display: flex;
             width: 85%;
             justify-content: space-between;
+            @media screen and (max-width: 650px){
+                width: 90%;
+            }
 
             .navbar-left {
                 display: flex;
                 align-items: center;
+                @media screen and (max-width: 650px){
+                   width: 100%;
+                }
+                
                 ul {
                     color: $white;
                     text-transform: uppercase;
@@ -64,6 +81,11 @@ header{
                     align-items: center;
                     justify-content: center;
                     height: 100%;
+                    @media screen and (max-width: 650px){
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                    }
                     
                     
 
@@ -83,6 +105,11 @@ header{
                         align-items: center;
                         justify-content: center;
                         transition: 0.2s;
+                        @media screen and (max-width: 650px){
+                            padding: 0 5px;
+                            font-size: 0.7rem;
+                            letter-spacing: 1px;
+                        }
 
                         &:first-child{
                             background: $white;
@@ -106,6 +133,9 @@ header{
                 width: 30%;
                 display: flex;
                 align-items: center;
+                @media screen and (max-width: 650px){
+                    display: none;
+                }
                 ul{
                     display: flex;
                     justify-content: space-around;
